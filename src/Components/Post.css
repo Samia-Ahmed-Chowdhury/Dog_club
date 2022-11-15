@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --main-nav-color: #daac00;
+    --main-color: #fcc302;
+    --main-secondary-color: #00bec9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* _------Care Sec----- */
+
+.post_sec h2 {
+    font-size: 7.5rem;
+    color: #313243;
+font-weight: 700;
+
+}
+
+.post_sec p {
+    font-size: 3.3rem;
+    color: #313243;
+    font-weight: 400; 
+}
+.post_sec .mid_card{
+    filter: drop-shadow(5.634px 10.595px 25.5px rgba(74,74,74,0.1));
+    border: none !important;
+}
+.post_sec .card  img{
+    height: 35rem;
+}
+.post_sec .card .card-body{
+    padding:2rem;
+}
+.post_sec .card .card-title{
+    font-size: 2.5rem;
+    color: #313243;
+    font-weight: 700;
+    
+}
+.post_sec .card h5{
+    font-size: 1.7rem;
+    margin: .7rem 0;
+color: #00bec9;
+font-weight: 400;
+text-transform: uppercase;
+}
+.post_sec .card .card-text{
+    font-size: 1.7rem;
+    color: #313243;
+    font-weight: 400;
+}
+.post_sec h4{
+    font-size: 2.1rem;
+color: #00bec9;
+font-weight: 500;
+}
+
+/* media query */
+@media only screen and (max-width:1400px) {
+    html {
+        font-size: 52% !important;
+    }
+}
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 50% !important;
+    }
+    
+}
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 48% !important;
+    }
+}
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }}
+
+    @media only screen and (max-width:500px) {
+        html {
+            font-size: 35%;
+        }}
+    

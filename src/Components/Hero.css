@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --main-nav-color: #daac00;
+    --main-color: #fcc302;
+    --main-secondary-color: #00bec9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* ---hero---- */
+.hero {
+    background-color: var(--main-color);
+}
+
+.hero_img {
+    max-width: 90%;
+}
+
+.hero h1 {
+    font-size: 6.7rem;
+    letter-spacing: .1rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 2.9rem;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 2rem 0 3rem 0;
+}
+
+.hero-btn {
+    color: white;
+    width: 18.2rem;
+    height: 6.9rem;
+    border-radius: .7rem;
+    background-color: var(--main-secondary-color);
+    font-size: 2.1rem;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    transition: all .9s ease;
+}
+
+.hero-btn:hover {
+    transition: all .9s ease;
+    transform: scale(1.1);
+    box-shadow: 0px 1rem 5rem .5rem hwb(0deg 100% 0% / 70%);
+}
+
+
+.hlper-btn {
+    color: #fff;
+    width: 18.2rem;
+    height: 6.9rem;
+    border-radius: .7rem;
+    border: 3px solid white;
+    font-size: 2.1rem;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 600;
+    background: none;
+    margin-left: 3rem;
+    transition: all .9s ease;
+}
+
+.hlper-btn:hover {
+    transform: translateY(-10px);
+    transition: all .9s ease;
+    box-shadow: 0px 10px 50px 5px hwb(0deg 100% 0% / 70%);
+}
+
+/* media query */
+@media only screen and (max-width:1400px) {
+    html {
+        font-size: 52% !important;
+    }
+}
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 50% !important;
+    }
+    
+}
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 48% !important;
+    }
+}
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }}
+
+
+
+
+@media only screen and (max-width:450px) {
+    .hero h1 {
+        font-size:5rem;
+    }
+    
+}
+@media only screen and (max-width:387px) {
+    .hero-btn {
+    margin-bottom: 2rem;
+    }
+    
+.hlper-btn {
+margin-left: 1.5rem;
+}
+}
+@media only screen and (max-width:378px) {
+    .hero-btn {
+    margin-bottom: 2rem;
+    }
+    
+.hlper-btn {
+margin-left: 1.3rem;
+}
+}

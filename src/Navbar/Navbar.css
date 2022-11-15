@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --main-nav-color: #daac00;
+    --main-color: #fcc302;
+    --main-secondary-color: #00bec9;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* -----navbar------- */
+nav {
+    background-color: var(--main-nav-color);
+}
+
+.navbar ul li {
+    padding: 0 3.5rem;
+}
+
+.navbar ul li a {
+    color: white;
+    padding: .2rem 0;
+    font-size:2.9rem;
+    font-weight: 500;
+}
+
+.search_form {
+    width: 27.4rem;
+height: 5.1rem;
+border: none;
+    filter: drop-shadow(.7512rem 1.4127rem .9rem rgba(74,74,74,0.1));
+
+}
+
+.navbar .form-control {border: none;
+    background-color: var(--main-color);
+}
+
+::placeholder {
+    font-size: 2.1rem;
+    letter-spacing: 0px;
+    color: #ffffff !important;
+    font-weight: 400;
+    padding: 0 .3rem;
+}
+
+.nav_btn {
+    background-color: var(--main-secondary-color);
+    width: 7.1rem;
+height: 5.1rem;
+    border: none !important;
+}
+
+.nav_btn svg {
+    font-size: 23px !important;
+    color: white !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler .toggle {
+    height: 35px;
+    width: 35px;
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle_btn {
+    display: none;
+    visibility: hidden;
+}
+
+.toggle .common {
+    position: absolute;
+    height: 4px;
+    width: 26px;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .mid_line {
+    top: 54.5%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .end_line {
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle_btn:checked~.toggle .top_line {
+    left: 5px;
+    top: 18px;
+    width: 25px;
+    transform: rotate(45deg);
+    transition: 0.5s ease-in-out;
+}
+
+.toggle_btn:checked~.toggle .mid_line {
+    opacity: 0;
+}
+
+.toggle_btn:checked~.toggle .end_line {
+    left: 5px;
+    top: 18px;
+    width: 25px;
+    transform: rotate(-45deg);
+    transition: 0.5s ease-in-out;
+}
+
+
+/* <!-- ---------mbl nav-------------- --> */
+.slide {
+    height: 100% !important;
+    width: 100vw !important;
+    transition: 0.6s ease;
+    transform: translateY(17px);
+    background-color:white !important;
+}
+
+.slide ul {
+    padding: 1rem 0 1rem 1rem;
+}
+
+.slide ul li {
+    padding: 3px 35px;
+}
+
+.slide ul li a {
+    color: black;
+}
+.slide li:not(:last-child) {
+    border-bottom: 2px solid var(--main-color);
+    width: 90%;
+}
+
+.hidden_search {
+    display: none;
+    margin-right: -421px
+}
+
+.hidden_search svg {
+    font-size: 3rem !important;
+    color: white !important;
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width:991px) {
+    .hidden_search {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .hidden_search {
+        margin-right: -283px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .hidden_search {
+        margin-right: -223px;
+    }
+}
+@media only screen and (max-width:470px) {
+    .hidden_search {
+        margin-right: -184px;
+    }
+}
+@media only screen and (max-width:430px) {
+    .hidden_search {
+        margin-right: -153px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .hidden_search {
+        margin-right: -127px;
+    }
+}
+@media only screen and (max-width:370px) {
+    .hidden_search {
+        margin-right: -97px;
+    }
+}
+@media only screen and (max-width:320px) {
+    .hidden_search {
+        margin-right: -52px;
+    }
+}
+/* media query */
+@media only screen and (max-width:1400px) {
+    html {
+        font-size: 52% !important;
+    }
+}
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 50% !important;
+    }
+    .navbar ul li {
+        padding: 0 25px;
+    }
+    .search_form {
+        width: 25.4rem;
+    }
+    
+}
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 48% !important;
+    }
+}
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }}

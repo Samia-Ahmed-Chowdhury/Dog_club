@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --main-nav-color: #daac00;
+    --main-color: #fcc302;
+    --main-secondary-color: #00bec9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* _------Care Sec----- */
+.care_sec {
+    background-color: var(--main-color);
+}
+
+.care_sec h2 {
+    font-size: 7.5rem;
+color: #ffffff;
+font-weight: 700;
+text-align: center;
+}
+
+.care_sec p {
+    font-size: 3.3rem;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+}
+.care_sec .card{
+    border: none !important;
+    background-color: var(--main-color);
+}
+.care_sec .card .card-title{
+    margin-top: 2rem;
+    font-size: 3.8rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+.care_sec .card .card-text{
+    font-size: 2.5rem;
+color: #ffffff;
+font-weight: 400;
+}
+/* ---------price----- */
+.price-title{
+    font-size: 42px;
+color: #ffffff;
+font-weight: 600;
+font-family: "Poppins";
+text-align: center;
+margin-top: 2rem;
+}
+.price_btn{
+    width: 19.9rem;
+height: 6rem;
+margin-top: 1rem;
+border-radius: 3rem;
+background-color: #00bec9;
+font-size: 2.5rem;
+color: #ffffff;
+font-weight: 600;
+font-family: "Poppins";
+text-align: center;
+border: none;
+}
+.pp{
+    margin-right:1rem ;
+    text-decoration: solid line-through white 5px;
+}
+
+/* media query */
+@media only screen and (max-width:1400px) {
+    html {
+        font-size: 52% !important;
+    }
+}
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 50% !important;
+    }
+    
+}
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 48% !important;
+    }
+}
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }}
+
+    @media only screen and (max-width:500px) {
+        html {
+            font-size: 35%;
+        }}
+    

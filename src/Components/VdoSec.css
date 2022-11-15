@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --main-nav-color: #daac00;
+    --main-color: #fcc302;
+    --main-secondary-color: #00bec9;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* _-------VdoSec----- */
+.vdo_col{
+    position: relative;
+}
+.vdo_img{
+    max-width: 90%;
+}
+.play_icon{
+    font-size: 7rem !important;
+    position: absolute;
+    top: 45%;
+    color: white !important;
+}
+.vdo_sec h2 {
+    font-size: 5rem;
+    color: #313243;
+    font-weight: 600;
+}
+
+.vdo_sec p {
+    margin: 2rem 0 3rem 0;
+    font-size: 2.9rem;
+letter-spacing: 0px;
+color: #313243;
+font-weight: 400;
+}
+.vdo_btn {
+    width: 18.2rem;
+    height: 6.9rem;
+    border-radius: 7px;
+    background-color: var(--main-color);
+    font-size: 2.1rem;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    transition: all .9s ease;
+}
+
+.vdo_btn:hover {
+    transition: all .9s ease;
+    transform: scale(1.1);
+    box-shadow:0px 10px 50px 5px rgb(255 231 160 / 50%);
+}
+
+
+/* media query */
+@media only screen and (max-width:1400px) {
+    html {
+        font-size: 52% !important;
+    }
+}
+@media only screen and (max-width:1200px) {
+    html {
+        font-size: 50% !important;
+    }
+    
+}
+@media only screen and (max-width:998px) {
+    html {
+        font-size: 48% !important;
+    }
+}
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 45%;
+    }}
+
+
+    @media only screen and (max-width:500px) {
+        html {
+            font-size: 35%;
+        }}
+    
