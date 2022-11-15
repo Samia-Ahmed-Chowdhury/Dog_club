@@ -1,3 +1,7 @@
+# 1.You have to first download this folder...
+# 2. Then Run this command "npm install" , it'll install all the required modules..
+# 3.After installing necessary modules ,run the command "npm start"..
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
